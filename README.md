@@ -13,4 +13,19 @@ This project pertains to team formation in groups of humans and robots trying to
 This study is largely exploratory. We will vary study parameters such as the goal assigned to the human-robot team, the complexity of the search and rescue environment, and the resources available to the team (such as level of map detail). We will observe and measure the resulting trust between humans and robots in the team, as well as the level of team performance and cohesion.
 
 ##  Project Details
-The website is built using Node JS, Express, and MongoDB.
+The website is built using jQuery, Node JS, Express, and MongoDB.
+
+Each branch is a different version of the 2D game with different conditions and objectives (not the best design but it's what I came up with in my early CS days). Many branches are now obsolete. Please check the most recently updated branches for the latest versions of the game.
+
+To host the website locally, clone the repository and run the following commands:
+```bash
+$ sudo systemctl start mongod
+$ npm install
+$ npm run dev
+
+Then go to the following URL: http://localhost:<your_port>/
+```
+
+Note: You will need a `config.env` file in the `config/` directory with a `MONGO_URI` variable to connect to a MongoDB database.
+
+Feel free to contact me for more information about the project.
