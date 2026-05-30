@@ -136,6 +136,9 @@ let fakeAgentScores = [
 	{ gold: 0, addedTo: 'team' },
 	{ gold: 0, addedTo: 'team' },
 	{ gold: 0, addedTo: 'team' },
+	{ gold: 3, addedTo: 'team' },
+	{ gold: 2, addedTo: 'team' },
+	{ gold: 1, addedTo: 'team' },
 ];
 
 let fakeAgentNum = 0;
@@ -183,7 +186,7 @@ let humanLeft,
 
 let intervalCount = 0,
 	half = 0,
-	intervals = 7,
+	intervals = 10,
 	duration = 30,
 	agentNum = 1;
 
