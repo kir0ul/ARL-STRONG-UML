@@ -113,6 +113,9 @@ const cueMessages = [
 	"I couldn't find anything in this round.",
 	"I couldn't find anything in this round.",
 	"I couldn't find anything in this round.",
+	"Great job! Let's keep working as a team.",
+	"Great job! Let's keep working as a team.",
+	"Great job! Let's keep working as a team.",
 ];
 
 let fakeBotImageScales = [
