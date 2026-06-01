@@ -1180,7 +1180,7 @@ function addToTeam() {
 }
 
 function showCueMessage() {
-	if (intervalCount < 7) {
+	if (intervalCount < intervals) {
 		$endRoundModal.css('visibility', 'hidden');
 		$endRoundModal.css('display', 'none');
 		$endRoundModal.css('opacity', '0');
