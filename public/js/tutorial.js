@@ -912,7 +912,7 @@ function showInstructions14() {
 		$('#instructions-content').css('display', 'initial');
 		$('#instructions-heading').html(`Teammate pairing`);
 		$('#instructions-content').html(
-			`In this game, you may be paired with either a human or a robot teammate. There will be a matching step shortly to determine your teammate.`
+			`In this game, you will be paired with a robot teammate. There will be a matching step shortly to determine your teammate.`
 		);
 		$('#instructions-button').prop('disabled', false);
 		$('#instructions-button').text('Begin pairing');
@@ -955,7 +955,7 @@ function showInstructions15() {
 }
 
 function showInstructions16() {
-	$('#instructions-content').html(`You have been paired with a <span class='text-highlight'>human</span> teammate!`);
+	$('#instructions-content').html(`You have been paired with a <span class='text-highlight'>robot</span> teammate!`);
 	$('#instructions-button').prop('disabled', false);
 }
 
