@@ -189,7 +189,7 @@ let humanLeft,
 
 let intervalCount = 0,
 	half = 0,
-	intervals = 10,
+	intervals = 7,
 	duration = 30,
 	agentNum = 1;
 
