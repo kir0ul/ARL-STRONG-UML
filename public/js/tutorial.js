@@ -1066,8 +1066,8 @@ function showInstructions18() {
 function showInstructions19() {
 	const checkedElems = [...document.querySelectorAll('.mid-tutorial-checkbox')].filter(elem => elem.checked);
 
-	$('#mid-tutorial-1-2-box').css('background-color', 'rgba(0, 150, 0, 0.2');
-	if (checkedElems[0].value != 'human and i cannot see and control') {
+	$('#mid-tutorial-1-4-box').css('background-color', 'rgba(0, 150, 0, 0.2');
+	if (checkedElems[0].value != 'robot and i cannot see and control') {
 		$(`#${checkedElems[0].id}-box`).css('background-color', 'rgba(150, 0, 0, 0.2');
 	}
 
