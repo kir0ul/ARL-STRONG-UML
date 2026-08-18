@@ -359,6 +359,8 @@ nav {
 	grid-template-rows: 1fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
+    white-space: nowrap;
+	padding: 5px;
 }
 
 .requiredMessage {
@@ -727,7 +729,7 @@ nav {
 }
 
 input[type='radio'] {
-	margin-right: 1em;
+	/* margin-right: 1em; */
 	accent-color: #305dc5;
 }
 

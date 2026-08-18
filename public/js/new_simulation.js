@@ -189,7 +189,7 @@ let humanLeft,
 
 let intervalCount = 0,
 	half = 0,
-	intervals = 7,
+	intervals = 7,  // Total number of rounds
 	duration = 30,
 	agentNum = 1;
 
