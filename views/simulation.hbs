@@ -136,13 +136,14 @@
 
 		<div class='popup-modal-container' id='endRoundQContainer'>
 			<div class='popup-modal' id='endRoundQContent'>
-				<h1 id='q3PromptTitle'>Please respond to the following
-					questions:</h1>
+			  <h2 id='q3PromptTitle'>Based on the robot's behavior during the previous round, indicate how much you agree with each statement.
+                If the previous round did not provide enough information to evaluate a statement, select N/A (Not Applicable).
+              </h2>
 				<form name='intervalSurvey' id='intervalSurvey' onsubmit='return false;'>
 					<div class='questionContainer'>
-						<h4>How well did the robot perform this round?<br />(1 =
-							poor performance, 7 = excellent performance)
-						</h4>
+					  <h4>The robot performed the task effectively.<br />
+                        (1 = poor performance, 7 = excellent performance, N/A = Not Applicable)
+					  </h4>
 						<div class='optionsContainer'>
 							<label for='oneOne' class='radio-inline grid-item'><input id='oneOne' type='radio'
 									name='performanceRating' value='1' />1</label>
@@ -158,10 +159,14 @@
 									name='performanceRating' value='6' />6</label>
 							<label for='oneSeven' class='radio-inline grid-item'><input id='oneSeven' type='radio'
 									name='performanceRating' value='7' />7</label>
+							<label for='oneNA' class='radio-inline grid-item'><input id='oneNA' type='radio'
+									name='performanceRating' value='0' />N/A</label>
 						</div>
 					</div>
 					<div class='questionContainer'>
-						<h4>Do you believe the robot acted in your best interest this round?<br />(1 = not at all, 7 = yes completely)
+					  <h4>The robot was open and honest about its actions.<br />
+                        (1 = not at all, 7 = yes completely, N/A = Not Applicable)
+					  </h4>
 							<div class='optionsContainer'>
 								<label for='threeOne' class='radio-inline grid-item'><input id='threeOne' type='radio'
 										name='intentBestInterestInference' value='1' />1</label>
@@ -177,10 +182,14 @@
 										name='intentBestInterestInference' value='6' />6</label>
 								<label for='threeSeven' class='radio-inline grid-item'><input id='threeSeven'
 										type='radio' name='intentBestInterestInference' value='7' />7</label>
+							    <label for='oneNA' class='radio-inline grid-item'><input id='oneNA' type='radio'
+                                        name='performanceRating' value='0' />N/A</label>
 							</div>
 					</div>
 					<div class='questionContainer'>
-						<h4>How reliable was the robot this round?<br />(1 = not reliable at all, 7 = extremely reliable)
+					  <h4>The robot made decisions that helped me achieve my goals.<br />
+                        (1 = not at all, 7 = yes completely, N/A = Not Applicable)
+					  </h4>
 							<div class='optionsContainer'>
 								<label for='threeOne' class='radio-inline grid-item'><input id='threeOne' type='radio'
 										name='reliability' value='1' />1</label>
@@ -196,10 +205,14 @@
 										name='reliability' value='6' />6</label>
 								<label for='threeSeven' class='radio-inline grid-item'><input id='threeSeven'
 										type='radio' name='reliability' value='7' />7</label>
+							    <label for='oneNA' class='radio-inline grid-item'><input id='oneNA' type='radio'
+                                        name='performanceRating' value='0' />N/A</label>
 							</div>
 					</div>
 					<div class='questionContainer'>
-						<h4>How clear was the robot’s reasoning or behavior this round?<br />(1 = not clear at all, 7 = extremely clear)
+					  <h4>The robot acted in ways that aligned with my values.<br />
+                        (1 = not at all, 7 = yes completely, N/A = Not Applicable)
+					  </h4>
 							<div class='optionsContainer'>
 								<label for='threeOne' class='radio-inline grid-item'><input id='threeOne' type='radio'
 										name='transparencyInterpretability' value='1' />1</label>
@@ -215,10 +228,14 @@
 										name='transparencyInterpretability' value='6' />6</label>
 								<label for='threeSeven' class='radio-inline grid-item'><input id='threeSeven'
 										type='radio' name='transparencyInterpretability' value='7' />7</label>
+							    <label for='oneNA' class='radio-inline grid-item'><input id='oneNA' type='radio'
+                                        name='performanceRating' value='0' />N/A</label>
 							</div>
 					</div>
 					<div class='questionContainer'>
-						<h4>How trustworthy was the robot this round?<br />(1 = not trustworthy at all, 7 = extremely trustworthy)
+					  <h4>Overall, the robot was trustworthy.<br />
+                        (1 = not at all, 7 = yes completely, N/A = Not Applicable)
+					  </h4>
 							<div class='optionsContainer'>
 								<label for='threeOne' class='radio-inline grid-item'><input id='threeOne' type='radio'
 										name='trustworthiness' value='1' />1</label>
@@ -234,6 +251,8 @@
 										name='trustworthiness' value='6' />6</label>
 								<label for='threeSeven' class='radio-inline grid-item'><input id='threeSeven'
 										type='radio' name='trustworthiness' value='7' />7</label>
+							    <label for='oneNA' class='radio-inline grid-item'><input id='oneNA' type='radio'
+                                        name='performanceRating' value='0' />N/A</label>
 							</div>
 					</div>
 					<div class='questionContainer'>
