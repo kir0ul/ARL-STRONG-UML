@@ -1,92 +1,273 @@
 <div class="survey">
-	<h3>Survey 2</h3>
+  <h3>Survey 2</h3>
 
-	<h4>The following questions are intended to gain an understanding of your background relevant to human-robot interaction.</h4>
+  <h4>The following questions are intended to gain an understanding of your
+    background relevant to human-robot interaction.</h4>
 
-	<form action="/survey-2-submit" method="POST" name="survey-2" id="survey-2">
-		<div class="question">
-			<p>What is your gender?</p>
-			<div class="options">
-				<label for="female"><input type="radio" id="female" name="gender" value="female" onclick="toggleTextInput()">Female</label>
-				<label for="male"><input type="radio" id="male" name="gender" value="male" onclick="toggleTextInput()">Male</label>
-                <label for="nonBinary"><input type="radio" id="nonBinary" name="gender" value="nonBinary" onclick="toggleTextInput()">Non-binary</label>
-                <label for="selfDescribe"><input type="radio" id="selfDescribe" name="gender" value="selfDescribe" onclick="toggleTextInput()">
-					Prefer to self-describe:
-					<input type="text" name="selfDescribeText" id="selfDescribeText" class="hideTextArea" placeholder="Please mention" style="display: none;"><sup class="hideTextArea" style="font-size: 11px;color: red; display: none;">* required</sup>
-				</label>
-                <label for="preferNotToAnswer"><input type="radio" id="preferNotToAnswer" name="gender" value="preferNotToAnswer" onclick="toggleTextInput()">Prefer not to answer</label>
-			</div>	
-		</div>
+  <form action="/survey-2-submit" method="POST" name="survey-2" id="survey-2">
+    <div class="question">
+      <p>What is your gender?</p>
+      <div class="options">
+        <label for="female"><input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            onclick="toggleTextInput()"
+          />Female</label>
+        <label for="male"><input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            onclick="toggleTextInput()"
+          />Male</label>
+        <label for="nonBinary"><input
+            type="radio"
+            id="nonBinary"
+            name="gender"
+            value="nonBinary"
+            onclick="toggleTextInput()"
+          />Non-binary</label>
+        <label for="selfDescribe"><input
+            type="radio"
+            id="selfDescribe"
+            name="gender"
+            value="selfDescribe"
+            onclick="toggleTextInput()"
+          />
+          Prefer to self-describe:
+          <input
+            type="text"
+            name="selfDescribeText"
+            id="selfDescribeText"
+            class="hideTextArea"
+            placeholder="Please mention"
+            style="display: none;"
+          /><sup
+            class="hideTextArea"
+            style="font-size: 11px;color: red; display: none;"
+          >* required</sup>
+        </label>
+        <label for="preferNotToAnswer"><input
+            type="radio"
+            id="preferNotToAnswer"
+            name="gender"
+            value="preferNotToAnswer"
+            onclick="toggleTextInput()"
+          />Prefer not to answer</label>
+      </div>
+    </div>
 
-		<div class="question">
-			<p>How old are you?</p>
-			<div class="options">
-				<label for="under20"><input type="radio" id="under20" name="age" value="under20">Under 20</label>
-				<label for="21-25"><input type="radio" id="21-25" name="age" value="21-25">21-25</label>
-				<label for="26-30"><input type="radio" id="26-30" name="age" value="26-30">26-30</label>
-				<label for="31-35"><input type="radio" id="31-35" name="age" value="31-35">31-35</label>
-				<label for="36-40"><input type="radio" id="36-40" name="age" value="36-40">36-40</label>
-                <label for="41-45"><input type="radio" id="41-45" name="age" value="41-45">41-45</label>
-                <label for="46-50"><input type="radio" id="46-50" name="age" value="46-50">46-50</label>
-                <label for="above50"><input type="radio" id="above50" name="age" value="above50">Above 50</label>
-			</div>
-		</div>
+    <div class="question">
+      <p>How old are you?</p>
+      <div class="options">
+        <label for="under20"><input
+            type="radio"
+            id="under20"
+            name="age"
+            value="under20"
+          />Under 20</label>
+        <label for="21-25"><input
+            type="radio"
+            id="21-25"
+            name="age"
+            value="21-25"
+          />21-25</label>
+        <label for="26-30"><input
+            type="radio"
+            id="26-30"
+            name="age"
+            value="26-30"
+          />26-30</label>
+        <label for="31-35"><input
+            type="radio"
+            id="31-35"
+            name="age"
+            value="31-35"
+          />31-35</label>
+        <label for="36-40"><input
+            type="radio"
+            id="36-40"
+            name="age"
+            value="36-40"
+          />36-40</label>
+        <label for="41-45"><input
+            type="radio"
+            id="41-45"
+            name="age"
+            value="41-45"
+          />41-45</label>
+        <label for="46-50"><input
+            type="radio"
+            id="46-50"
+            name="age"
+            value="46-50"
+          />46-50</label>
+        <label for="above50"><input
+            type="radio"
+            id="above50"
+            name="age"
+            value="above50"
+          />Above 50</label>
+      </div>
+    </div>
 
-		<div class="question">
-			<p>What is the highest level of education you have completed?</p>
-			<div class="options">
-				<label for="highschool"><input type="radio" id="highschool" name="education" value="highschool">High school</label>
-				<label for="college"><input type="radio" id="college" name="education" value="college">College</label>
-				<label for="bachelorsDeg"><input type="radio" id="bachelorsDeg" name="education" value="bachelorsDeg">Bachelor's degree</label>
-				<label for="mastersDeg"><input type="radio" id="mastersDeg" name="education" value="mastersDeg">Master's degree</label>
-				<label for="phd"><input type="radio" id="phd" name="education" value="phd">Doctorate</label>
-                <label for="notListedAbove"><input type="radio" id="notListedAbove" name="education" value="notListedAbove">Not listed above</label>
-            </div>
-		</div>
+    <div class="question">
+      <p>What is the highest level of education you have completed?</p>
+      <div class="options">
+        <label for="highschool"><input
+            type="radio"
+            id="highschool"
+            name="education"
+            value="highschool"
+          />High school</label>
+        <label for="college"><input
+            type="radio"
+            id="college"
+            name="education"
+            value="college"
+          />College</label>
+        <label for="bachelorsDeg"><input
+            type="radio"
+            id="bachelorsDeg"
+            name="education"
+            value="bachelorsDeg"
+          />Bachelor's degree</label>
+        <label for="mastersDeg"><input
+            type="radio"
+            id="mastersDeg"
+            name="education"
+            value="mastersDeg"
+          />Master's degree</label>
+        <label for="phd"><input
+            type="radio"
+            id="phd"
+            name="education"
+            value="phd"
+          />Doctorate</label>
+        <label for="notListedAbove"><input
+            type="radio"
+            id="notListedAbove"
+            name="education"
+            value="notListedAbove"
+          />Not listed above</label>
+      </div>
+    </div>
 
-		<div class="question">
-			<p>How much of your education and/or occupation is related to technology?<br>Rate from 1-7; 1 = not related, 7 = highly related.</p>
-			<div class="options smallOptions">
-				<label for="techEd1" class="grid-item"><input type="radio" id="techEd1" name="techEd" value="1">1</label>
-				<label for="techEd2" class="grid-item"><input type="radio" id="techEd2" name="techEd" value="2">2</label>
-				<label for="techEd3" class="grid-item"><input type="radio" id="techEd3" name="techEd" value="3">3</label>
-				<label for="techEd4" class="grid-item"><input type="radio" id="techEd4" name="techEd" value="4">4</label>
-				<label for="techEd5" class="grid-item"><input type="radio" id="techEd5" name="techEd" value="5">5</label>
-                <label for="techEd6" class="grid-item"><input type="radio" id="techEd6" name="techEd" value="6">6</label>
-                <label for="techEd7" class="grid-item"><input type="radio" id="techEd7" name="techEd" value="7">7</label>
-			</div>
-		</div>
+    <div class="question">
+      <p>How much of your education and/or occupation is related to technology?<br
+        />Rate from 1-7; 1 = not related, 7 = highly related.</p>
+      <div class="options smallOptions">
+        <label for="techEd1" class="grid-item"><input
+            type="radio"
+            id="techEd1"
+            name="techEd"
+            value="1"
+          />1</label>
+        <label for="techEd2" class="grid-item"><input
+            type="radio"
+            id="techEd2"
+            name="techEd"
+            value="2"
+          />2</label>
+        <label for="techEd3" class="grid-item"><input
+            type="radio"
+            id="techEd3"
+            name="techEd"
+            value="3"
+          />3</label>
+        <label for="techEd4" class="grid-item"><input
+            type="radio"
+            id="techEd4"
+            name="techEd"
+            value="4"
+          />4</label>
+        <label for="techEd5" class="grid-item"><input
+            type="radio"
+            id="techEd5"
+            name="techEd"
+            value="5"
+          />5</label>
+        <label for="techEd6" class="grid-item"><input
+            type="radio"
+            id="techEd6"
+            name="techEd"
+            value="6"
+          />6</label>
+        <label for="techEd7" class="grid-item"><input
+            type="radio"
+            id="techEd7"
+            name="techEd"
+            value="7"
+          />7</label>
+      </div>
+    </div>
 
-        	<div class="question">
-			<p>How much experience have you had working with/using robots in the past?<br>Rate from 1-7; 1 = never, 7 = very often.</p>
-			<div class="options smallOptions">
-				<label for="roboticsExp1" class="grid-item"><input type="radio" id="roboticsExp1" name="roboticsExp" value="1">1</label>
-				<label for="roboticsExp2" class="grid-item"><input type="radio" id="roboticsExp2" name="roboticsExp" value="2">2</label>
-				<label for="roboticsExp3" class="grid-item"><input type="radio" id="roboticsExp3" name="roboticsExp" value="3">3</label>
-				<label for="roboticsExp4" class="grid-item"><input type="radio" id="roboticsExp4" name="roboticsExp" value="4">4</label>
-				<label for="roboticsExp5" class="grid-item"><input type="radio" id="roboticsExp5" name="roboticsExp" value="5">5</label>
-                <label for="roboticsExp6" class="grid-item"><input type="radio" id="roboticsExp6" name="roboticsExp" value="6">6</label>
-                <label for="roboticsExp7" class="grid-item"><input type="radio" id="roboticsExp7" name="roboticsExp" value="7">7</label>
-			</div>
-		</div>
+    <div class="question">
+      <p>How much experience have you had working with/using robots in the past?<br
+        />Rate from 1-7; 1 = never, 7 = very often.</p>
+      <div class="options smallOptions">
+        <label for="roboticsExp1" class="grid-item"><input
+            type="radio"
+            id="roboticsExp1"
+            name="roboticsExp"
+            value="1"
+          />1</label>
+        <label for="roboticsExp2" class="grid-item"><input
+            type="radio"
+            id="roboticsExp2"
+            name="roboticsExp"
+            value="2"
+          />2</label>
+        <label for="roboticsExp3" class="grid-item"><input
+            type="radio"
+            id="roboticsExp3"
+            name="roboticsExp"
+            value="3"
+          />3</label>
+        <label for="roboticsExp4" class="grid-item"><input
+            type="radio"
+            id="roboticsExp4"
+            name="roboticsExp"
+            value="4"
+          />4</label>
+        <label for="roboticsExp5" class="grid-item"><input
+            type="radio"
+            id="roboticsExp5"
+            name="roboticsExp"
+            value="5"
+          />5</label>
+        <label for="roboticsExp6" class="grid-item"><input
+            type="radio"
+            id="roboticsExp6"
+            name="roboticsExp"
+            value="6"
+          />6</label>
+        <label for="roboticsExp7" class="grid-item"><input
+            type="radio"
+            id="roboticsExp7"
+            name="roboticsExp"
+            value="7"
+          />7</label>
+      </div>
+    </div>
 
-		<button id="submit" type="submit" form="survey-2" value="Submit">Submit</button>
-	</form>
+    <button
+      id="submit"
+      type="submit"
+      form="survey-2"
+      value="Submit"
+    >Submit</button>
+  </form>
 </div>
 
 <script>
-	$(document).ready(() => {
-		// if (!sessionStorage.getItem('uuid')) window.location.href = '/';
-	});
-	
-	function toggleTextInput() {
-		if ($('input[name="gender"]:checked').val() == 'selfDescribe') {
-			$('.hideTextArea').css('display', 'inline-block');
-			$('.hideTextArea').prop('required', true);
-		} else {
-			$('.hideTextArea').css('display', 'none');
-			$('.hideTextArea').val('');
-			$('.hideTextArea').prop('required', false);
-		}
-	}
+  $(document).ready(() => { // if (!sessionStorage.getItem('uuid'))
+  window.location.href = '/'; }); function toggleTextInput() { if
+  ($('input[name="gender"]:checked').val() == 'selfDescribe') {
+  $('.hideTextArea').css('display', 'inline-block');
+  $('.hideTextArea').prop('required', true); } else {
+  $('.hideTextArea').css('display', 'none'); $('.hideTextArea').val('');
+  $('.hideTextArea').prop('required', false); } }
 </script>
