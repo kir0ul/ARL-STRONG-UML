@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "start": "node app",
-      "dev": "nodemon app",
-      "format": "prettier --write ."
+    "start": "node app",
+    "dev": "nodemon app",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
