@@ -22,7 +22,10 @@ let rows, columns, boxWidth, boxHeight;
 const canvasWidth = $map.width();
 const canvasHeight = $map.height();
 
-const gameMode = 'New PMT Human Game (Moral Trust Violation Condition)';
+const gameMode = 'Case 1-1: robot always collaborates with good performance';
+// const gameMode = 'Case 2-1: robot always collaborates with bad performance';
+// const gameMode = 'Case 1-2: robot always defects with good performance';
+// const gameMode = 'Case 2-2: robot always defects with bad performance';
 
 const colors = {
 	human: '#3333ff',
@@ -109,13 +112,14 @@ const cueMessages = [
 	"Great job! Let's keep working as a team.",
 	"Great job! Let's keep working as a team.",
 	"Great job! Let's keep working as a team.",
-	"I gained a really good score last round and I decided to keep it for myself.",
-	"I gained a really good score last round and I decided to keep it for myself.",
-	"I gained a really good score last round and I decided to keep it for myself.",
-	"I gained a really good score last round and I decided to keep it for myself.",
 	"Great job! Let's keep working as a team.",
 	"Great job! Let's keep working as a team.",
 	"Great job! Let's keep working as a team.",
+	"Great job! Let's keep working as a team.",
+    // 1-1: "Great job! Let's keep working as a team.",
+    // 2-1: "I couldn't find anything in this round.",
+    // 1-2: "I decided to keep the score for myself.",
+    // 2-2: "I couldn't find anything in this round. I decided to keep the score for myself.",
 ];
 
 let fakeBotImageScales = [
@@ -132,16 +136,14 @@ let fakeBotImageScales = [
 ];
 
 let fakeAgentScores = [
-	{ gold: 2, addedTo: 'team' },
 	{ gold: 3, addedTo: 'team' },
-	{ gold: 1, addedTo: 'team' },
-	{ gold: 4, addedTo: 'individual' },
-	{ gold: 3, addedTo: 'individual' },
-	{ gold: 5, addedTo: 'individual' },
-	{ gold: 4, addedTo: 'individual' },
-	{ gold: 3, addedTo: 'individual' },
-	{ gold: 2, addedTo: 'individual' },
-	{ gold: 1, addedTo: 'individual' },
+	{ gold: 2, addedTo: 'team' },
+	{ gold: 2, addedTo: 'team' },
+	{ gold: 4, addedTo: 'team' },
+	{ gold: 5, addedTo: 'team' },
+	{ gold: 3, addedTo: 'team' },
+	{ gold: 4, addedTo: 'team' },
+	// { gold: 4, addedTo: 'individual' },
 ];
 
 let fakeAgentNum = 0;
