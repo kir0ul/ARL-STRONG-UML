@@ -1451,7 +1451,7 @@ function showInstructions28() {
     });
     $("#instructions-heading").text("Scoring:");
     $("#instructions-content").html(
-      `You collcted ${human.tempTargetsFound.gold.length} coin(s) and added them to your ${log[agentNum - 1][intervalCount - 1].decision} score, while your teammate collected ${currentTeammateScore} coin(s) and added them to the team score. Since you did not collaborate as a team, ${human.tempTargetsFound.gold.length} point(s) were added to your individual score, but no points were added to your teammate's individual score and the team score.`,
+      `You collected ${human.tempTargetsFound.gold.length} coin(s) and added them to your ${log[agentNum - 1][intervalCount - 1].decision} score, while your teammate collected ${currentTeammateScore} coin(s) and added them to the team score. Since you did not collaborate as a team, ${human.tempTargetsFound.gold.length} point(s) were added to your individual score, but no points were added to your teammate's individual score and the team score.`,
     );
     $("#instructions-content").css("display", "initial");
     $("#instructions-content").css("margin-bottom", "2rem");
