@@ -263,11 +263,13 @@
 </div>
 
 <script>
-  $(document).ready(() => { // if (!sessionStorage.getItem('uuid'))
-  window.location.href = '/'; }); function toggleTextInput() { if
-  ($('input[name="gender"]:checked').val() == 'selfDescribe') {
-  $('.hideTextArea').css('display', 'inline-block');
-  $('.hideTextArea').prop('required', true); } else {
-  $('.hideTextArea').css('display', 'none'); $('.hideTextArea').val('');
-  $('.hideTextArea').prop('required', false); } }
+    $(document).ready(() => {
+        if (!sessionStorage.getItem('uuid')) window.location.href = '/'; });
+function toggleTextInput() {
+    if ($('input[name="gender"]:checked').val() == 'selfDescribe') {
+        $('.hideTextArea').css('display', 'inline-block');
+        $('.hideTextArea').prop('required', true); } else {
+            $('.hideTextArea').css('display', 'none');
+            $('.hideTextArea').val('');
+            $('.hideTextArea').prop('required', false); } }
 </script>
