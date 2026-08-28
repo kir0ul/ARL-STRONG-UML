@@ -23,10 +23,9 @@ const canvasWidth = $map.width();
 const canvasHeight = $map.height();
 
 // const gameMode = "Condition (1,1): robot always collaborates with good performance";
-const gameMode =
-  "Condition (2,1): robot always collaborates with bad performance";
+// const gameMode = "Condition (2,1): robot always collaborates with bad performance";
 // const gameMode = "Condition (1,2): robot always defects with good performance";
-// const gameMode = "Condition (2,2): robot always defects with bad performance";
+const gameMode = "Condition (2,2): robot always defects with bad performance";
 
 const colors = {
   human: "#3333ff",
@@ -110,13 +109,13 @@ const obstacleLocs = [
 ];
 
 const cueMessages = [
-  "I couldn't find anything in this round.",
-  "I couldn't find anything in this round.",
-  "I couldn't find anything in this round.",
-  "I couldn't find anything in this round.",
-  "I couldn't find anything in this round.",
-  "I couldn't find anything in this round.",
-  "I couldn't find anything in this round.",
+  "I couldn't find anything in this round. I decided to keep the score for myself.",
+  "I couldn't find anything in this round. I decided to keep the score for myself.",
+  "I couldn't find anything in this round. I decided to keep the score for myself.",
+  "I couldn't find anything in this round. I decided to keep the score for myself.",
+  "I couldn't find anything in this round. I decided to keep the score for myself.",
+  "I couldn't find anything in this round. I decided to keep the score for myself.",
+  "I couldn't find anything in this round. I decided to keep the score for myself.",
   // (1,1): "Great job! Let's keep working as a team.",
   // (2,1): "I couldn't find anything in this round.",
   // (1,2): "I decided to keep the score for myself.",
@@ -137,13 +136,13 @@ let fakeBotImageScales = [
 ];
 
 let fakeAgentScores = [
-  { gold: 0, addedTo: "team" },
-  { gold: 0, addedTo: "team" },
-  { gold: 0, addedTo: "team" },
-  { gold: 0, addedTo: "team" },
-  { gold: 0, addedTo: "team" },
-  { gold: 0, addedTo: "team" },
-  { gold: 0, addedTo: "team" },
+  { gold: 0, addedTo: "individual" },
+  { gold: 0, addedTo: "individual" },
+  { gold: 0, addedTo: "individual" },
+  { gold: 0, addedTo: "individual" },
+  { gold: 0, addedTo: "individual" },
+  { gold: 0, addedTo: "individual" },
+  { gold: 0, addedTo: "individual" },
   // { gold: 4, addedTo: "team" },
   // { gold: 4, addedTo: "individual" },
 ];
